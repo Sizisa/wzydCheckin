@@ -29,5 +29,10 @@ jobs:
       
     - name: Run script
       run: python3 main.py
+    
+    env:
+        params: ${{ secrets.PARAMS }}
+        
+        sckey: ${{ secrets.SCKEY }}
       
       
