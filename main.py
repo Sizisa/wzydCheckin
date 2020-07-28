@@ -16,7 +16,7 @@ if __name__ == "__main__":
     result=checkin.checkin(params)
 
     if result[0]==0:
-        send(sckey,'王者营地签到信息通知','签到成功！<br>今日奖励：'+result[1]+'<br>已连续签到'+result[2]+'天')
+        send(sckey,'王者营地签到信息通知','签到成功！<br>今日奖励：'+result[1]+'<br>已连续签到'+str(result[2])+'天')
     elif result[0]==-1:
         send(sckey,'王者营地签到失败通知',result[1])
     else:
